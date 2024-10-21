@@ -1,0 +1,173 @@
+/* Estilos gerais */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #8B0000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seção de Apresentação (Hero) */
+#hero {
+    background-image: url('https://img-cdn.pixlr.com/image-generator/history/66f7045a398957049f2222a1/c183acb5-40d0-4ff9-9a9a-b05d5a78bb71/preview.webp');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+#hero .btn {
+    background-color: #B22222;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#hero .btn:hover {
+    background-color: #FF4500;
+}
+
+/* Seção de Destaques */
+#destaques {
+    padding: 50px 0;
+}
+
+#destaques h3 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+#destaques .grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+#destaques .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+}
+
+#destaques .card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#destaques .card h4 {
+    margin: 20px 0;
+    font-size: 1.5em;
+}
+
+#destaques .card p {
+    font-size: 1em;
+    color: #666;
+}
+
+#destaques .card .btn {
+    display: inline-block;
+    background-color: #8B0000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+#destaques .card .btn:hover {
+    background-color: #FF4500;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #destaques .grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #destaques .card {
+        width: 80%;
+    }
+    
+}
